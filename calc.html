@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Preetham Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" id="display" readonly>
+        <div class="button-container">
+            <button class="button" onclick="document.querySelector('#display').value=''; crr='';">c</button>
+            <button class="button" onclick="crr=crr+'1'; document.querySelector('#display').value=crr">1</button>
+            <button class="button" onclick="crr=crr+'2'; document.querySelector('#display').value=crr">2</button>
+            <button class="button" onclick="crr=crr+'+'; document.querySelector('#display').value=crr">+</button>
+            <button class="button" onclick="crr=crr+'3'; document.querySelector('#display').value=crr">3</button>
+            <button class="button" onclick="crr=crr+'4'; document.querySelector('#display').value=crr">4</button>
+            <button class="button" onclick="crr=crr+'-'; document.querySelector('#display').value=crr">-</button>
+            <button class="button" onclick="crr=crr+'5'; document.querySelector('#display').value=crr">5</button>
+            <button class="button" onclick="crr=crr+'6'; document.querySelector('#display').value=crr">6</button>
+            <button class="button" onclick="crr=crr+'*'; document.querySelector('#display').value=crr">*</button>
+            <button class="button" onclick="crr=crr+'7'; document.querySelector('#display').value=crr">7</button>
+            <button class="button" onclick="crr=crr+'8'; document.querySelector('#display').value=crr">8</button>
+            <button class="button" onclick="crr=crr+'/'; document.querySelector('#display').value=crr">/</button>
+            <button class="button" onclick="evaluateExpression()";>=</button>
+            <button class="button" onclick="crr=crr+'9'; document.querySelector('#display').value=crr">9</button>
+            <button class="button" onclick="crr=crr+'0'; document.querySelector('#display').value=crr">0</button>
+            <button class="button" onclick="crr=crr+'.'; document.querySelector('#display').value=crr">.</button>
+        </div>
+        <h1></h1>
+    </div>
+    <script src="calc.js">
+        </script>
+</body>
+</html>
